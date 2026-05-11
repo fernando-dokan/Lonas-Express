@@ -154,9 +154,6 @@ const Navbar = ({ isDarkMode, toggleTheme, setPage }: { isDarkMode: boolean, tog
 
   const navLinks = [
     { name: t('nav.brand'), href: '#about' },
-    { name: t('nav.custom'), href: '#custom' },
-    { name: t('nav.resistance'), href: '#specs' },
-    { name: t('nav.products'), href: '#products' },
     { name: t('nav.gallery'), href: '#gallery', action: () => setPage('gallery') },
   ];
 
