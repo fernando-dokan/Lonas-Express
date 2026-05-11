@@ -167,7 +167,7 @@ const Navbar = ({ isDarkMode, toggleTheme, setPage }: { isDarkMode: boolean, tog
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? 'bg-surface/95 backdrop-blur-xl py-3 border-b border-border-variant' : 'bg-transparent py-8'}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? 'bg-surface/95 backdrop-blur-xl py-3 border-b border-border-variant' : 'bg-gradient-to-b from-black/95 via-black/60 to-transparent py-10'}`}>
       <div className="container mx-auto px-6 flex justify-between items-center">
         <a 
           href="#home" 
@@ -179,9 +179,9 @@ const Navbar = ({ isDarkMode, toggleTheme, setPage }: { isDarkMode: boolean, tog
           className="flex items-center gap-3 group"
         >
           <img 
-            src="https://drive.google.com/uc?export=view&id=1j3HnLNl20kKnyXWZ-57awTh-WWrnphos" 
+            src="/src/logo.svg" 
             alt="Lonas Express Logo" 
-            className={`h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-500 ${isDarkMode ? 'brightness-0 invert' : ''}`}
+            className="h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-500"
             referrerPolicy="no-referrer"
           />
         </a>
@@ -693,6 +693,13 @@ const CustomTents = () => {
 
 const MapSection = () => {
   const position: [number, number] = [-23.2925, -51.1966];
+
+  const customIcon = new L.Icon({
+    iconUrl: '/src/map-icon.svg',
+    iconSize: [50, 64],
+    iconAnchor: [25, 64],
+    popupAnchor: [0, -60],
+  });
   
   return (
     <section className="h-[500px] w-full relative border-y border-border-variant bg-brand-blue-deep">
@@ -700,14 +707,14 @@ const MapSection = () => {
         <MapContainer 
           center={position} 
           zoom={16} 
-          scrollWheelZoom={false} 
+          scrollWheelZoom={true} 
           style={{ height: '100%', width: '100%' }}
         >
           <TileLayer
             attribution='&copy; OpenStreetMap'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
-          <Marker position={position}>
+          <Marker position={position} icon={customIcon}>
             <Popup>
               <div className="p-2">
                 <h4 className="text-brand-blue-deep font-bold mb-1">Lonas Express</h4>
@@ -721,13 +728,6 @@ const MapSection = () => {
       {/* Overlays for styling */}
       <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-brand-blue-deep to-transparent z-10 pointer-events-none"></div>
       <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-brand-blue-deep to-transparent z-10 pointer-events-none"></div>
-      
-      {/* Label Overlay */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 pointer-events-none flex flex-col items-center">
-        <div className="bg-brand-red p-4 rounded-full shadow-2xl animate-pulse">
-           <MapPin size={32} className="text-white" />
-        </div>
-      </div>
     </section>
   );
 };
@@ -845,9 +845,9 @@ const Footer = () => {
           <div className="max-w-sm">
             <div className="flex items-center gap-3 mb-8">
               <img 
-                src="https://drive.google.com/uc?export=view&id=1j3HnLNl20kKnyXWZ-57awTh-WWrnphos" 
+                src="/src/logo.svg" 
                 alt="Lonas Express Logo" 
-                className={`h-10 w-auto object-contain ${isDarkMode ? 'brightness-0 invert' : ''}`}
+                className="h-10 w-auto object-contain"
                 referrerPolicy="no-referrer"
               />
             </div>
