@@ -176,7 +176,7 @@ const Navbar = ({ isDarkMode, toggleTheme, setPage }: { isDarkMode: boolean, tog
           className="flex items-center gap-3 group"
         >
           <img 
-            src="/src/logo.svg" 
+            src="https://lh3.googleusercontent.com/d/1iotNm7S1a60a0DksWDLOJlnYTbO-pOOv" 
             alt="Lonas Express Logo" 
             className="h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-500"
             referrerPolicy="no-referrer"
@@ -609,7 +609,7 @@ const CustomTents = () => {
             <TiltContainer>
               <div className="relative aspect-video rounded-sm overflow-hidden border border-border-variant group">
                 <img 
-                  src="https://images.unsplash.com/photo-1565615833231-e8c91a38a012?q=80&w=1200" 
+                  src="https://lh3.googleusercontent.com/d/1cGj7LsRZlR_K7nzk2JC1Z8LHCDKP8h-7" 
                   alt="Lona Personalizada Evento" 
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000"
                   referrerPolicy="no-referrer"
@@ -817,7 +817,7 @@ const Footer = () => {
           <div className="max-w-sm">
             <div className="flex items-center gap-3 mb-8">
               <img 
-                src="/src/logo.svg" 
+                src="https://lh3.googleusercontent.com/d/1iotNm7S1a60a0DksWDLOJlnYTbO-pOOv" 
                 alt="Lonas Express Logo" 
                 className="h-10 w-auto object-contain"
                 referrerPolicy="no-referrer"
