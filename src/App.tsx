@@ -48,7 +48,7 @@ const translations = {
     hero: { tagLine: 'cobriu, protegeu, resolveu!', title1: 'Soluções em lona', title2: 'com agilidade e resistência!', sub: 'Loja completa com soluções ultra-rápidas em lonas de alta resistência.', explore: 'EXPLORAR PRODUTOS', whatsapp: 'NOSSO WHATSAPP' },
     specs: { s1Title: 'BLINDAGEM EXPRESS', s1Desc: 'Lonas de alta densidade com tratamento anti-chamas e proteção UV. Projetadas para suportar o rigor das estradas.', s2Title: 'AGILIDADE MÁXIMA', s2Desc: 'Sistema de entrega e instalação ultra-rápido. Sua carga ou evento protegidos em tempo recorde.', s3Title: 'LOGÍSTICA INTEGRADA', s3Desc: 'Soluções pensadas para o transporte e armazenagem. Leveza e resistência em um só produto.' },
     about: { tag: 'CONFIANÇA E VELOCIDADE', title: 'AGILIDADE', titleAccent: 'EXTREMA.', desc: 'Há mais de uma década redefinindo padrões para ter sempre a entrega mais rápida do mercado de lonas. Loja com grande variedade de produtos de lona para diferentes usos e custos-benefícios que melhor se enquadra para sua necessidade.', p1: 'PROTEÇÃO', p1Sub: 'Resistência UV máxima', p2: 'EXPRESS', p2Sub: 'Entrega e montagem recorde', p3: 'QUALIDADE', p3Sub: 'Materiais premium', p4: 'VERSÁTIL', p4Sub: 'Aplicações infinitas', label: 'Express Grade A' },
-    products: { tag: 'Catálogo de Produtos 2024', title: 'SOLUÇÕES', titleAccent: 'PERSONALIZADAS.', datasheet: 'GALERIA', p1Title: 'LONAS', p1Desc: 'Lona totalmente blackout, com excelente isolamento térmico e toque macio. Produzida por vulcanização em rádio frequência, dispensando costuras com linhas convencionais, o que evita rasgos e infiltrações ao longo do uso.\n\nDisponível em mais de uma dúzia de cores lisas, com opção de personalização em impressão digital, ideal para fortalecer a presença da sua marca em qualquer ambiente.', p2Title: 'GALPÃO INDUSTRIAL', p2Desc: 'Solução definitiva para logística e estocagem de grãos. Vãos livres monumentais que permitem a manobra de maquinário pesado com total segurança.', p3Title: 'SANFONADA ELITE', p3Desc: 'Mobilidade sem sacrifício de robustez. Sistema de articulação pantográfica em alumínio estrutural. Montagem tática em menos de 120 segundos.' },
+    products: { tag: 'Catálogo de Produtos 2024', title: 'TENDAS', titleAccent: '', datasheet: 'GALERIA', p1Title: 'LONAS', p1Desc: 'Lona totalmente blackout, com excelente isolamento térmico e toque macio. Produzida por vulcanização em rádio frequência, dispensando costuras com linhas convencionais, o que evita rasgos e infiltrações ao longo do uso.\n\nDisponível em mais de uma dúzia de cores lisas, com opção de personalização em impressão digital, ideal para fortalecer a presença da sua marca em qualquer ambiente.', p2Title: 'GALPÃO INDUSTRIAL', p2Desc: 'Solução definitiva para logística e estocagem de grãos. Vãos livres monumentais que permitem a manobra de maquinário pesado com total segurança.', p3Title: 'SANFONADA ELITE', p3Desc: 'Mobilidade sem sacrifício de robustez. Sistema de articulação pantográfica em alumínio estrutural. Montagem tática em menos de 120 segundos.' },
     custom: { tag: 'Soluções Sob Medida', title: 'LONAS', titleAccent: 'SOB MEDIDA.', desc: 'Sua necessidade é única, nossa agilidade também. Desenvolvemos lonas sob medida com branding exclusivo, dimensões específicas e acabamentos premium para atender as demandas mais urgentes.', l1: 'Impressão Digital Ultra-Rápida', l2: 'Cores Vibrantes e Duradouras', l3: 'Acabamento Reforçado em Solda Eletrônica', l4: 'Logística Expressa para todo Brasil', cta: 'SOLICITAR ORÇAMENTO' },
     contact: { tag: 'ENTRE EM CONTATO', title: 'VAMOS', titleAccent: 'LÁ!', desc: 'Nossa central de atendimento está disponível para consultoria técnica imediata. Projetos customizados com entrega expressa.', lName: 'nome', lWhatsApp: 'WhatsApp', lCategory: 'Categoria', lMessage: 'Mensagem', lAddress: 'ENDEREÇO', pName: 'Nome ou Empresa', pWhatsApp: 'Telefone / WhatsApp', pMessage: 'Digite sua mensagem, em casos de dúvidas... entre em contato diretamente pelo nosso WhatsApp!', op1: 'Lonas em Geral', op2: 'Lona de Caminhão', op3: 'Capa piscina', op4: 'Tenda Sanfonada/Piramidal', op5: 'Outros', cta: 'ENVIAR' },
     gallery: { tag: 'NOSSOS PROJETOS', title: 'GALERIA DE', titleAccent: 'FOTOS.', counter: 'Item' },
@@ -59,7 +59,7 @@ const translations = {
     hero: { tagLine: 'covered, protected, resolved!', title1: 'Tarp Solutions', title2: 'with speed and strength!', sub: 'Complete store with ultra-fast solutions in high-resistance tarps.', explore: 'EXPLORE PRODUCTS', whatsapp: 'OUR WHATSAPP' },
     specs: { s1Title: 'EXPRESS SHIELDING', s1Desc: 'High-density tarps with fire-retardant and UV protection. Designed to withstand road conditions.', s2Title: 'MAXIMUM SPEED', s2Desc: 'Ultra-fast delivery and installation system. Your cargo or event protected in record time.', s3Title: 'INTEGRATED LOGISTICS', s3Desc: 'Solutions designed for transport and storage. Lightness and strength in one product.' },
     about: { tag: 'TRUST AND SPEED', title: 'EXTREME', titleAccent: 'AGILITY.', desc: 'For over a decade redefining standards to always have the fastest delivery in the tarp market. Wide variety of products for different uses.', p1: 'PROTECTION', p1Sub: 'Maximum UV resistance', p2: 'EXPRESS', p2Sub: 'Record delivery & assembly', p3: 'QUALITY', p3Sub: 'Premium materials', p4: 'VERSATILE', p4Sub: 'Infinite applications', label: 'Express Grade A' },
-    products: { tag: 'Product Catalog 2024', title: 'CUSTOM', titleAccent: 'SOLUTIONS.', datasheet: 'GALLERY', p1Title: 'TARPS', p1Desc: 'Full blackout tarp, with excellent thermal insulation and soft touch. Produced by radio frequency vulcanization, avoiding conventional seams.', p2Title: 'INDUSTRIAL WAREHOUSE', p2Desc: 'Ultimate solution for logistics and grain storage. Large spans for heavy machinery maneuvering.', p3Title: 'ELITE FOLDABLE', p3Desc: 'Mobility without sacrificing robustness. Aluminum structural system. Tactical assembly in 120s.' },
+    products: { tag: 'Product Catalog 2024', title: 'TENTS', titleAccent: '', datasheet: 'GALLERY', p1Title: 'TARPS', p1Desc: 'Full blackout tarp, with excellent thermal insulation and soft touch. Produced by radio frequency vulcanization, avoiding conventional seams.', p2Title: 'INDUSTRIAL WAREHOUSE', p2Desc: 'Ultimate solution for logistics and grain storage. Large spans for heavy machinery maneuvering.', p3Title: 'ELITE FOLDABLE', p3Desc: 'Mobility without sacrificing robustness. Aluminum structural system. Tactical assembly in 120s.' },
     custom: { tag: 'Custom Solutions', title: 'TAILOR-MADE', titleAccent: 'TARPS.', desc: 'Your need is unique, our speed too. We develop custom tarps with exclusive branding to meet urgent demands.', l1: 'Ultra-Fast Digital Printing', l2: 'Vibrant and Durable Colors', l3: 'Electronic Welding Reinforcement', l4: 'Express Logistics nationwide', cta: 'REQUEST QUOTE' },
     contact: { tag: 'GET IN TOUCH', title: 'LET\'S', titleAccent: 'GO!', desc: 'Our technical support is available for immediate consultation. Custom projects with express delivery.', lName: 'name', lWhatsApp: 'WhatsApp', lCategory: 'Category', lMessage: 'Message', lAddress: 'ADDRESS', pName: 'Name or Company', pWhatsApp: 'Phone / WhatsApp', pMessage: 'Enter your message, in case of questions... contact us directly via WhatsApp!', op1: 'General Tarps', op2: 'Truck Tarp', op3: 'Pool Cover', op4: 'Foldable/Pyramidal Tent', op5: 'Others', cta: 'SEND' },
     gallery: { tag: 'OUR PROJECTS', title: 'PHOTO', titleAccent: 'GALLERY.', counter: 'Item' },
@@ -70,7 +70,7 @@ const translations = {
     hero: { tagLine: '¡cubrió, protegió, resolvió!', title1: 'Soluciones en lona', title2: '¡con agilidad y resistencia!', sub: 'Tienda completa con soluciones ultrarrápidas en lonas de alta resistencia.', explore: 'EXPLORAR PRODUCTOS', whatsapp: 'NUESTRO WHATSAPP' },
     specs: { s1Title: 'BLINDAJE EXPRESS', s1Desc: 'Lonas de alta densidad con tratamiento ignífugo y protección UV. Diseñadas para el rigor de las carreteras.', s2Title: 'MÁXIMA AGILIDAD', s2Desc: 'Sistema de entrega e instalación ultrarrápido. Su carga o evento protegidos en tiempo récord.', s3Title: 'LOGÍSTICA INTEGRADA', s3Desc: 'Soluciones pensadas para el transporte y almacenaje. Ligereza y resistencia en un solo producto.' },
     about: { tag: 'CONFIANZA Y VELOCIDÁ', title: 'AGILIDAD', titleAccent: 'EXTREMA.', desc: 'Hace más de una década redefiniendo estándares para la entrega más rápida del mercado. Gran variedad de productos para diferentes usos.', p1: 'PROTECCIÓN', p1Sub: 'Máxima resistencia UV', p2: 'EXPRESS', p2Sub: 'Entrega y montaje récord', p3: 'CALIDAD', p3Sub: 'Materiales premium', p4: 'VERSÁTIL', p4Sub: 'Aplikaciones infinitas', label: 'Express Grade A' },
-    products: { tag: 'Catálogo de Productos 2024', title: 'SOLUCIONES', titleAccent: 'PERSONALIZADAS.', datasheet: 'GALERÍA', p1Title: 'LONAS', p1Desc: 'Lona totalmente blackout, con excelente aislamiento térmico y tacto suave. Producida por vulcanización, sin costuras convencionales.', p2Title: 'GALPÓN INDUSTRIAL', p2Desc: 'Solución definitiva para logística y almacenamiento de granos. Vãos libres para maniobra de maquinaria pesada.', p3Title: 'PLEGABLE ELITE', p3Desc: 'Movilidad sin sacrificar robustez. Sistema de aluminio estructural. Montaje táctico en 120 segundos.' },
+    products: { tag: 'Catálogo de Productos 2024', title: 'TIENDAS', titleAccent: '', datasheet: 'GALERÍA', p1Title: 'LONAS', p1Desc: 'Lona totalmente blackout, con excelente aislamiento térmico y tacto suave. Producida por vulcanización, sin costuras convencionales.', p2Title: 'GALPÓN INDUSTRIAL', p2Desc: 'Solución definitiva para logística y almacenamiento de granos. Vãos libres para maniobra de maquinaria pesada.', p3Title: 'PLEGABLE ELITE', p3Desc: 'Movilidad sin sacrificar robustez. Sistema de aluminio estructural. Montaje táctico en 120 segundos.' },
     custom: { tag: 'Soluciones a Medida', title: 'LONAS', titleAccent: 'A MEDIDA.', desc: 'Su necesidad es única, nuestra agilidad también. Desarrollamos lonas a medida con branding exclusivo.', l1: 'Impresión Digital Ultrarrápida', l2: 'Colores Vibrantes y Duraderos', l3: 'Refuerzo de Soldadura Electrónica', l4: 'Logística Expresa a todo el país', cta: 'SOLICITAR PRESUPUESTO' },
     contact: { tag: 'CONTACTO', title: '¡VAMOS', titleAccent: 'ALLÁ!', desc: 'Nuestro centro de atención está disponible para consultoría técnica inmediata.', lName: 'nombre', lWhatsApp: 'WhatsApp', lCategory: 'Categoría', lMessage: 'Mensaje', lAddress: 'DIRECCIÓN', pName: 'Nombre o Empresa', pWhatsApp: 'Teléfono / WhatsApp', pMessage: 'Escriba su mensaje, en caso de dudas... ¡contáctenos directamente por nuestro WhatsApp!', op1: 'Lonas en General', op2: 'Lona de Camión', op3: 'Cubierta para Piscina', op4: 'Carpa Plegable/Piramidal', op5: 'Otros', cta: 'ENVIAR' },
     gallery: { tag: 'NUESTROS PROYECTOS', title: 'GALERÍA DE', titleAccent: 'FOTOS.', counter: 'Item' },
@@ -315,7 +315,7 @@ const Hero = () => {
       <VelocityFlash />
       <motion.div style={{ y: yBg, scale }} className="absolute inset-0 z-0">
         <img 
-          src="https://media.istockphoto.com/id/2268542385/pt/foto/cargo-truck-transporting-goods-on-highway-in-brazil.jpg?s=2048x2048&w=is&k=20&c=Cd-Ur6nBmeOHbtm52F9BXSrs4Q0Dz42Q5LTKiCVU_W4=" 
+          src="https://lh3.googleusercontent.com/d/1Ogk7heNWpYRt8mMfXWscI7PsZR3fc6g5" 
           alt="Caminhão com Lona Lonas Express" 
           className="w-full h-full object-cover opacity-40 grayscale hover:grayscale-0 transition-all duration-1000"
           referrerPolicy="no-referrer"
@@ -394,7 +394,7 @@ const FeatureCard = ({ icon: Icon, title, description, index }: any) => {
         <div className="w-16 h-16 bg-surface-variant rounded-sm flex items-center justify-center mb-8 group-hover:bg-brand-red group-hover:text-white transition-all duration-500">
           <Icon size={32} />
         </div>
-        <h3 className="text-3xl mb-4 tracking-wider">{title}</h3>
+        <h3 className="text-3xl mb-4">{title}</h3>
         <p className="text-on-surface/50 leading-relaxed font-light text-sm tracking-wide flex-grow">
           {description}
         </p>
@@ -464,7 +464,7 @@ const About = () => {
               <div className="absolute -inset-10 bg-brand-red/5 blur-[120px] rounded-full"></div>
               <div className="relative h-full rounded-sm overflow-hidden border border-border-variant group">
                 <img 
-                  src="https://images.unsplash.com/photo-1586864387917-f539b1684bb0?q=80&w=800" 
+                  src="https://lh3.googleusercontent.com/d/1B7-80ngBsJZUSc7AHgsp14Jf8TZBYApq" 
                   alt="Lonas de Vinil Express" 
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000"
                   referrerPolicy="no-referrer"
@@ -485,49 +485,46 @@ const About = () => {
 };
 
 const Products = ({ onGalleryClick }: { onGalleryClick?: () => void }) => {
-  const [activeTab, setActiveTab] = useState('piramidal');
   const [currentImg, setCurrentImg] = useState(0);
   const { t, lang } = useTranslation();
 
-  const productData: any = {
-    piramidal: {
-      id: "01",
-      title: t('products.p1Title'),
-      description: t('products.p1Desc'),
-      specs: lang === 'pt' ? ["Vãos de 3m a 20m", "Lona TD1000 Blackout", "Carga de Vento: 80km/h"] : (lang === 'en' ? ["3m to 20m spans", "TD1000 Blackout Tarp", "Wind Load: 80km/h"] : ["Vanos de 3m a 20m", "Lona TD1000 Blackout", "Carga de Viento: 80km/h"]),
-      images: [
-        'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?q=80&w=800',
-        'https://images.unsplash.com/photo-1544928147-79a2dbc1f389?q=80&w=800'
-      ]
+  const tentImages = [
+    'https://lh3.googleusercontent.com/d/1VCgjL4miJqY6OftIUQedeIi52qWWWWw0',
+    'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?q=80&w=800',
+    'https://images.unsplash.com/photo-1544928147-79a2dbc1f389?q=80&w=800'
+  ];
+
+  const nextImg = () => setCurrentImg((prev) => (prev + 1) % tentImages.length);
+  const prevImg = () => setCurrentImg((prev) => (prev - 1 + tentImages.length) % tentImages.length);
+
+  const descriptionParts = lang === 'pt' ? [
+    {
+      title: "Tendas Sanfonadas",
+      text: "As tendas sanfonadas são a solução ideal para eventos de curta duração, feiras, ações promocionais e atividades itinerantes. Com estrutura dobrável e sistema de montagem prática, podem ser instaladas e desmontadas em poucos minutos, oferecendo praticidade e agilidade para quem precisa de mobilidade. Sua cobertura em lona de alta qualidade proporciona excelente proteção contra sol e chuva, além de estar disponível em diversas cores e opções de personalização com impressão digital para destacar sua marca em qualquer ambiente."
     },
-    galpao: {
-      id: "02",
-      title: t('products.p2Title'),
-      description: t('products.p2Desc'),
-      specs: lang === 'pt' ? ["Pé-direito até 10m", "Lona Térmica", "Fundação Simplificada"] : (lang === 'en' ? ["Ceiling up to 10m", "Thermal Tarp", "Simplified Foundation"] : ["Altura hasta 10m", "Lona Térmica", "Fundación Simplificada"]),
-      images: [
-        'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800',
-        'https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=800'
-      ]
-    },
-    sanfonada: {
-      id: "03",
-      title: t('products.p3Title'),
-      description: t('products.p3Desc'),
-      specs: lang === 'pt' ? ["Alumínio Anodizado", "Tecido Impermeável", "Case de Proteção"] : (lang === 'en' ? ["Anodized Aluminum", "Waterproof Fabric", "Protection Case"] : ["Aluminio Anodizado", "Tejido Impermeable", "Estuche de Protección"]),
-      images: [
-        'https://images.unsplash.com/photo-1505373633572-2d1f5060e642?q=80&w=800',
-        'https://images.unsplash.com/photo-1565615833231-e8c91a38a012?q=80&w=800'
-      ]
+    {
+      title: "Tendas Piramidais",
+      text: "As tendas piramidais são recomendadas para eventos de média e longa duração, oferecendo maior robustez, resistência e aproveitamento interno. Sua estrutura não possui colunas centrais, garantindo amplo espaço livre para circulação e acomodação de pessoas, equipamentos ou mobiliário. Disponíveis em grandes dimensões, são ideais para eventos corporativos, áreas de convivência, coberturas permanentes ou semipermanentes. A lona utilizada proporciona excelente isolamento térmico, alta durabilidade e pode ser personalizada com impressão digital para valorizar ainda mais a identidade visual da sua marca."
     }
-  };
-
-  const nextImg = () => setCurrentImg((prev) => (prev + 1) % productData[activeTab].images.length);
-  const prevImg = () => setCurrentImg((prev) => (prev - 1 + productData[activeTab].images.length) % productData[activeTab].images.length);
-
-  useEffect(() => {
-    setCurrentImg(0);
-  }, [activeTab]);
+  ] : (lang === 'en' ? [
+    {
+      title: "Foldable Tents",
+      text: "Foldable tents are the ideal solution for short-duration events, trade fairs, promotional actions and itinerant activities. With a folding structure and practical assembly system, they can be installed and disassembled in a few minutes, offering convenience and agility for those who need mobility. Their high-quality canvas cover provides excellent protection against sun and rain, in addition to being available in several colors and customization options with digital printing to highlight your brand in any environment."
+    },
+    {
+      title: "Pyramidal Tents",
+      text: "Pyramidal tents are recommended for medium and long-duration events, offering greater sturdiness, strength and indoor space utilization. Since their structure doesn't have central columns, they guarantee ample free space for the movement of people, equipment or furniture. Available in large dimensions, they are ideal for corporate events, living areas, permanent or semi-permanent coverings. The canvas used provides excellent thermal insulation, high durability and can be customized with digital printing to further enhance your brand's visual identity."
+    }
+  ] : [
+    {
+      title: "Carpas Plegables",
+      text: "Las carpas plegables son la solución ideal para eventos de corta duración, ferias, acciones promocionales y actividades itinerantes. Con una estructura plegable y un sistema de montaje práctico, se pueden instalar y desmontar en pocos minutos, ofreciendo practicidad y agilidad para quienes necesitan movilidad. Su cubierta de lona de alta calidad proporciona una excelente protección contra el sol y la lluvia, además de estar disponible en varios colores y opciones de personalización con impresión digital para activar y destacar su marca en cualquier entorno."
+    },
+    {
+      title: "Carpas Piramidales",
+      text: "Las carpas piramidales se recomiendan para eventos de mediana y larga duración, ofreciendo mayor robustez, resistencia y aprovechamiento del espacio interno. Su estructura no cuenta con columnas centrales, garantizando un amplio espacio libre para la circulación y acomodación de personas, equipos o mobiliario. Disponibles en grandes dimensiones, son ideales para eventos corporativos, áreas de convivencia, coberturas permanentes o semipermanentes. La lona utilizada proporciona un excelente aislamiento térmico, alta durabilidad y se puede personalizar con impresión digital para valorizar aún más la identidad visual de su marca."
+    }
+  ]);
 
   return (
     <section id="products" className="py-32 bg-brand-blue-deep relative overflow-hidden">
@@ -538,68 +535,46 @@ const Products = ({ onGalleryClick }: { onGalleryClick?: () => void }) => {
             <div className="flex items-center gap-4 mb-6">
               <div className="w-8 h-[2px] bg-brand-red"></div>
             </div>
-            <h2 className="text-5xl md:text-9xl leading-none italic">{t('products.title')} <br /> <span className="text-brand-blue">{t('products.titleAccent')}</span></h2>
-          </div>
-          <div className="flex gap-4 mb-4">
-            {Object.keys(productData).map((key) => (
-              <button
-                key={key}
-                onClick={() => setActiveTab(key)}
-                className={`w-14 h-14 rounded-full border flex items-center justify-center font-display text-xl transition-all duration-500 italic ${activeTab === key ? 'bg-brand-red border-brand-red text-white' : 'border-border-variant hover:border-on-surface/30'}`}
-              >
-                {productData[key].id}
-              </button>
-            ))}
+            <h2 className="text-5xl md:text-9xl leading-none italic">{t('products.title')}</h2>
           </div>
         </div>
 
         <div className="grid lg:grid-cols-12 gap-10 items-stretch">
           {/* Left: Info */}
           <div className="lg:col-span-5 flex flex-col justify-center">
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={activeTab}
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: 50 }}
-                transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-              >
-                <div className="w-8 h-[2px] bg-brand-red mb-6"></div>
-                <h3 className="text-4xl mb-8 tracking-wider italic">{productData[activeTab].title}</h3>
-                <p className="text-on-surface/50 text-lg mb-12 leading-relaxed font-light">
-                  {productData[activeTab].description}
-                </p>
-                
-                <div className="space-y-6 mb-12">
-                  {productData[activeTab].specs.map((spec: string, i: number) => (
-                    <div key={i} className="flex items-center gap-4 group">
-                      <div className="w-2 h-2 bg-brand-red group-hover:scale-150 transition-transform"></div>
-                      <span className="text-xs font-mono uppercase tracking-widest text-on-surface/80">{spec}</span>
-                    </div>
-                  ))}
+            <div className="space-y-10">
+              {descriptionParts.map((part, index) => (
+                <div key={index}>
+                  <div className="w-8 h-[2px] bg-brand-red mb-4"></div>
+                  <h3 className="text-3xl mb-4 italic text-brand-blue font-bold">{part.title}</h3>
+                  <p className="text-on-surface/70 text-base leading-relaxed font-light mb-2">
+                    {part.text}
+                  </p>
                 </div>
+              ))}
 
+              <div className="pt-4">
                 <button 
                   onClick={onGalleryClick}
                   className="group bg-white text-black px-10 py-5 rounded-sm font-bold text-xs tracking-[0.3em] hover:bg-brand-red hover:text-white transition-all flex items-center gap-4"
                 >
                   {t('products.datasheet')} <ArrowUpRight size={18} />
                 </button>
-              </motion.div>
-            </AnimatePresence>
+              </div>
+            </div>
           </div>
 
           {/* Right: Visual */}
           <div className="lg:col-span-7">
-            <div className="relative h-[600px] rounded-sm overflow-hidden border border-border-variant">
+            <div className="relative h-[650px] rounded-sm overflow-hidden border border-border-variant">
               <AnimatePresence mode="wait">
                 <motion.img
-                  key={`${activeTab}-${currentImg}`}
+                  key={currentImg}
                   initial={{ opacity: 0, scale: 1.1 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.95 }}
                   transition={{ duration: 0.8 }}
-                  src={productData[activeTab].images[currentImg]}
+                  src={tentImages[currentImg]}
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
@@ -607,7 +582,7 @@ const Products = ({ onGalleryClick }: { onGalleryClick?: () => void }) => {
               
               <div className="absolute inset-0 bg-gradient-to-r from-surface/40 to-transparent"></div>
               
-              <div className="absolute bottom-10 right-10 flex gap-4">
+              <div className="absolute bottom-10 right-10 flex gap-4 z-10">
                 <button onClick={prevImg} className="w-16 h-16 bg-surface/80 backdrop-blur-md border border-border-variant flex items-center justify-center hover:bg-brand-red hover:text-white transition-all">
                   <ChevronLeft size={24} />
                 </button>

@@ -1,9 +1,9 @@
 @import "tailwindcss";
 @import "leaflet/dist/leaflet.css";
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Saira+Extra+Condensed:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=JetBrains+Mono:wght@400;500&display=swap');
 
 @theme {
-  --font-display: "Bebas Neue", sans-serif;
+  --font-display: "Saira Extra Condensed", sans-serif;
   --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
 
@@ -39,8 +39,12 @@
     perspective: 1000px;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-display tracking-wide uppercase;
+  h1, h2, h3 {
+    @apply font-display font-extrabold italic tracking-tighter uppercase;
+  }
+
+  h4, h5, h6 {
+    @apply font-display tracking-tight uppercase;
   }
 }
 
