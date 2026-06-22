@@ -30,6 +30,7 @@ import {
 } from 'lucide-react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
+import { Tarps } from './components/Tarps';
 
 // Leaflet marker icon fix
 L.Icon.Default.mergeOptions({
@@ -51,7 +52,7 @@ const translations = {
     products: { tag: 'Catálogo de Produtos 2024', title: 'TENDAS', titleAccent: '', datasheet: 'GALERIA', p1Title: 'LONAS', p1Desc: 'Lona totalmente blackout, com excelente isolamento térmico e toque macio. Produzida por vulcanização em rádio frequência, dispensando costuras com linhas convencionais, o que evita rasgos e infiltrações ao longo do uso.\n\nDisponível em mais de uma dúzia de cores lisas, com opção de personalização em impressão digital, ideal para fortalecer a presença da sua marca em qualquer ambiente.', p2Title: 'GALPÃO INDUSTRIAL', p2Desc: 'Solução definitiva para logística e estocagem de grãos. Vãos livres monumentais que permitem a manobra de maquinário pesado com total segurança.', p3Title: 'SANFONADA ELITE', p3Desc: 'Mobilidade sem sacrifício de robustez. Sistema de articulação pantográfica em alumínio estrutural. Montagem tática em menos de 120 segundos.' },
     custom: { tag: 'Soluções Sob Medida', title: 'LONAS', titleAccent: 'SOB MEDIDA.', desc: 'Sua necessidade é única, nossa agilidade também. Desenvolvemos lonas sob medida com branding exclusivo, dimensões específicas e acabamentos premium para atender as demandas mais urgentes.', l1: 'Impressão Digital Ultra-Rápida', l2: 'Cores Vibrantes e Duradouras', l3: 'Acabamento Reforçado em Solda Eletrônica', l4: 'Logística Expressa para todo Brasil', cta: 'SOLICITAR ORÇAMENTO' },
     contact: { tag: 'ENTRE EM CONTATO', title: 'VAMOS', titleAccent: 'LÁ!', desc: 'Nossa central de atendimento está disponível para consultoria técnica imediata. Projetos customizados com entrega expressa.', lName: 'nome', lWhatsApp: 'WhatsApp', lCategory: 'Categoria', lMessage: 'Mensagem', lAddress: 'ENDEREÇO', pName: 'Nome ou Empresa', pWhatsApp: 'Telefone / WhatsApp', pMessage: 'Digite sua mensagem, em casos de dúvidas... entre em contato diretamente pelo nosso WhatsApp!', op1: 'Lonas em Geral', op2: 'Lona de Caminhão', op3: 'Capa piscina', op4: 'Tenda Sanfonada/Piramidal', op5: 'Outros', cta: 'ENVIAR' },
-    gallery: { tag: 'NOSSOS PROJETOS', title: 'GALERIA DE', titleAccent: 'FOTOS.', counter: 'Item' },
+    gallery: { tag: 'NOSSOS PROJETOS', title: 'GALERIA DE', titleAccent: 'FOTOS.', counter: 'Item', back: 'Voltar para o início' },
     footer: { desc: 'Líder nacional em soluções rápidas de cobertura. Tecnologia e agilidade para proteção de ativos em tempo recorde.', nav: 'Navegação', social: 'Social', rights: 'TODOS OS DIREITOS RESERVADOS.', privacy: 'PRIVACIDADE', terms: 'TERMOS', email: 'SEU MELHOR E-MAIL', p4: 'Lonas Leves' }
   },
   en: {
@@ -62,7 +63,7 @@ const translations = {
     products: { tag: 'Product Catalog 2024', title: 'TENTS', titleAccent: '', datasheet: 'GALLERY', p1Title: 'TARPS', p1Desc: 'Full blackout tarp, with excellent thermal insulation and soft touch. Produced by radio frequency vulcanization, avoiding conventional seams.', p2Title: 'INDUSTRIAL WAREHOUSE', p2Desc: 'Ultimate solution for logistics and grain storage. Large spans for heavy machinery maneuvering.', p3Title: 'ELITE FOLDABLE', p3Desc: 'Mobility without sacrificing robustness. Aluminum structural system. Tactical assembly in 120s.' },
     custom: { tag: 'Custom Solutions', title: 'TAILOR-MADE', titleAccent: 'TARPS.', desc: 'Your need is unique, our speed too. We develop custom tarps with exclusive branding to meet urgent demands.', l1: 'Ultra-Fast Digital Printing', l2: 'Vibrant and Durable Colors', l3: 'Electronic Welding Reinforcement', l4: 'Express Logistics nationwide', cta: 'REQUEST QUOTE' },
     contact: { tag: 'GET IN TOUCH', title: 'LET\'S', titleAccent: 'GO!', desc: 'Our technical support is available for immediate consultation. Custom projects with express delivery.', lName: 'name', lWhatsApp: 'WhatsApp', lCategory: 'Category', lMessage: 'Message', lAddress: 'ADDRESS', pName: 'Name or Company', pWhatsApp: 'Phone / WhatsApp', pMessage: 'Enter your message, in case of questions... contact us directly via WhatsApp!', op1: 'General Tarps', op2: 'Truck Tarp', op3: 'Pool Cover', op4: 'Foldable/Pyramidal Tent', op5: 'Others', cta: 'SEND' },
-    gallery: { tag: 'OUR PROJECTS', title: 'PHOTO', titleAccent: 'GALLERY.', counter: 'Item' },
+    gallery: { tag: 'OUR PROJECTS', title: 'PHOTO', titleAccent: 'GALLERY.', counter: 'Item', back: 'Back to home' },
     footer: { desc: 'National leader in fast coverage solutions. Technology and speed for asset protection in record time.', nav: 'Navigation', social: 'Social', rights: 'ALL RIGHTS RESERVED.', privacy: 'PRIVACY POLICY', terms: 'TERMS OF SERVICE', email: 'YOUR BEST EMAIL', p4: 'Lightweight Tarps' }
   },
   es: {
@@ -73,7 +74,7 @@ const translations = {
     products: { tag: 'Catálogo de Productos 2024', title: 'TIENDAS', titleAccent: '', datasheet: 'GALERÍA', p1Title: 'LONAS', p1Desc: 'Lona totalmente blackout, con excelente aislamiento térmico y tacto suave. Producida por vulcanización, sin costuras convencionales.', p2Title: 'GALPÓN INDUSTRIAL', p2Desc: 'Solución definitiva para logística y almacenamiento de granos. Vãos libres para maniobra de maquinaria pesada.', p3Title: 'PLEGABLE ELITE', p3Desc: 'Movilidad sin sacrificar robustez. Sistema de aluminio estructural. Montaje táctico en 120 segundos.' },
     custom: { tag: 'Soluciones a Medida', title: 'LONAS', titleAccent: 'A MEDIDA.', desc: 'Su necesidad es única, nuestra agilidad también. Desarrollamos lonas a medida con branding exclusivo.', l1: 'Impresión Digital Ultrarrápida', l2: 'Colores Vibrantes y Duraderos', l3: 'Refuerzo de Soldadura Electrónica', l4: 'Logística Expresa a todo el país', cta: 'SOLICITAR PRESUPUESTO' },
     contact: { tag: 'CONTACTO', title: '¡VAMOS', titleAccent: 'ALLÁ!', desc: 'Nuestro centro de atención está disponible para consultoría técnica inmediata.', lName: 'nombre', lWhatsApp: 'WhatsApp', lCategory: 'Categoría', lMessage: 'Mensaje', lAddress: 'DIRECCIÓN', pName: 'Nombre o Empresa', pWhatsApp: 'Teléfono / WhatsApp', pMessage: 'Escriba su mensaje, en caso de dudas... ¡contáctenos directamente por nuestro WhatsApp!', op1: 'Lonas en General', op2: 'Lona de Camión', op3: 'Cubierta para Piscina', op4: 'Carpa Plegable/Piramidal', op5: 'Otros', cta: 'ENVIAR' },
-    gallery: { tag: 'NUESTROS PROYECTOS', title: 'GALERÍA DE', titleAccent: 'FOTOS.', counter: 'Item' },
+    gallery: { tag: 'NUESTROS PROYECTOS', title: 'GALERÍA DE', titleAccent: 'FOTOS.', counter: 'Item', back: 'Volver al inicio' },
     footer: { desc: 'Líder nacional en soluciones rápidas de cobertura. Tecnología y agilidade para protección en tiempo récord.', nav: 'Navegación', social: 'Social', rights: 'TODOS LOS DERECHOS RESERVADOS.', privacy: 'PRIVACIDAD', terms: 'TÉRMINOS', email: 'TU MEJOR E-MAIL', p4: 'Lonas Ligeras' }
   }
 };
@@ -141,7 +142,7 @@ const TiltContainer = ({ children, className = "" }: { children: React.ReactNode
   );
 };
 
-const Navbar = ({ isDarkMode, toggleTheme, setPage }: { isDarkMode: boolean, toggleTheme: () => void, setPage: (p: string) => void }) => {
+const Navbar = ({ isDarkMode, toggleTheme }: { isDarkMode: boolean, toggleTheme: () => void }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { lang, setLang, t } = useTranslation();
@@ -154,7 +155,6 @@ const Navbar = ({ isDarkMode, toggleTheme, setPage }: { isDarkMode: boolean, tog
 
   const navLinks = [
     { name: t('nav.brand'), href: '#about' },
-    { name: t('nav.gallery'), href: '#gallery', action: () => setPage('gallery') },
   ];
 
   const languages = [
@@ -170,7 +170,6 @@ const Navbar = ({ isDarkMode, toggleTheme, setPage }: { isDarkMode: boolean, tog
           href="#home" 
           onClick={(e) => {
             e.preventDefault();
-            setPage('home');
             window.location.hash = '#home';
           }}
           className="flex items-center gap-3 group"
@@ -189,11 +188,7 @@ const Navbar = ({ isDarkMode, toggleTheme, setPage }: { isDarkMode: boolean, tog
             <button 
               key={link.name} 
               onClick={() => {
-                if (link.action) {
-                  link.action();
-                } else {
-                  window.location.hash = link.href;
-                }
+                window.location.hash = link.href;
               }}
               className={`text-[10px] font-bold uppercase tracking-[0.2em] hover:text-brand-red transition-colors relative group ${isDarkMode ? 'text-white/70' : 'text-on-surface/70'}`}
             >
@@ -274,11 +269,7 @@ const Navbar = ({ isDarkMode, toggleTheme, setPage }: { isDarkMode: boolean, tog
                 key={link.name} 
                 onClick={() => {
                   setIsMobileMenuOpen(false);
-                  if (link.action) {
-                    link.action();
-                  } else {
-                    window.location.hash = link.href;
-                  }
+                  window.location.hash = link.href;
                 }}
                 className={`text-4xl text-left font-display uppercase tracking-widest hover:text-brand-red transition-colors ${isDarkMode ? 'text-white' : 'text-on-surface'}`}
               >
@@ -484,7 +475,7 @@ const About = () => {
   );
 };
 
-const Products = ({ onGalleryClick }: { onGalleryClick?: () => void }) => {
+const Products = () => {
   const [currentImg, setCurrentImg] = useState(0);
   const { t, lang } = useTranslation();
 
@@ -552,15 +543,6 @@ const Products = ({ onGalleryClick }: { onGalleryClick?: () => void }) => {
                   </p>
                 </div>
               ))}
-
-              <div className="pt-4">
-                <button 
-                  onClick={onGalleryClick}
-                  className="group bg-white text-black px-10 py-5 rounded-sm font-bold text-xs tracking-[0.3em] hover:bg-brand-red hover:text-white transition-all flex items-center gap-4"
-                >
-                  {t('products.datasheet')} <ArrowUpRight size={18} />
-                </button>
-              </div>
             </div>
           </div>
 
@@ -865,98 +847,7 @@ const Footer = () => {
 };
 
 
-const Gallery = () => {
-  const images = [
-    "https://images.unsplash.com/photo-1586528116311-ad863c17d1ff?q=80&w=1200",
-    "https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=80&w=1200",
-    "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=1200",
-    "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=1200",
-    "https://images.unsplash.com/photo-1494412574643-ff11b865c1c3?q=80&w=1200",
-    "https://images.unsplash.com/photo-1580674271209-40b48e15320d?q=80&w=1200"
-  ];
-
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const { t } = useTranslation();
-
-  const nextImage = () => {
-    setCurrentIndex((prev) => (prev + 1) % images.length);
-  };
-
-  const prevImage = () => {
-    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
-  };
-
-  return (
-    <section id="gallery" className="pt-40 pb-32 min-h-screen bg-surface relative overflow-hidden">
-      <VelocityFlash />
-      <div className="container mx-auto px-6">
-        <div className="flex items-center gap-4 mb-12 justify-center">
-          <div className="w-8 h-[2px] bg-brand-red"></div>
-          <span className="text-brand-red font-mono text-xs tracking-[0.4em] uppercase">{t('gallery.tag')}</span>
-          <div className="w-8 h-[2px] bg-brand-red"></div>
-        </div>
-
-        <h2 className="text-6xl md:text-8xl mb-20 leading-none italic text-center">
-          {t('gallery.title')} <span className="text-brand-blue">{t('gallery.titleAccent')}</span>
-        </h2>
-
-        {/* Main Slider */}
-        <div className="relative group max-w-5xl mx-auto aspect-video rounded-sm overflow-hidden border border-border-variant">
-          <AnimatePresence mode="wait">
-            <motion.img
-              key={currentIndex}
-              src={images[currentIndex]}
-              initial={{ opacity: 0, scale: 1.1 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.95 }}
-              transition={{ duration: 0.5, ease: "easeOut" }}
-              className="w-full h-full object-cover"
-              referrerPolicy="no-referrer"
-            />
-          </AnimatePresence>
-
-          {/* Controls */}
-          <button 
-            onClick={prevImage}
-            className="absolute left-6 top-1/2 -translate-y-1/2 w-12 h-12 bg-surface/80 backdrop-blur-md flex items-center justify-center rounded-full hover:bg-brand-red transition-all group-hover:scale-110"
-          >
-            <ChevronLeft size={24} />
-          </button>
-          <button 
-            onClick={nextImage}
-            className="absolute right-6 top-1/2 -translate-y-1/2 w-12 h-12 bg-surface/80 backdrop-blur-md flex items-center justify-center rounded-full hover:bg-brand-red transition-all group-hover:scale-110"
-          >
-            <ChevronRight size={24} />
-          </button>
-
-          {/* Counter */}
-          <div className="absolute bottom-6 left-6 font-mono text-[10px] tracking-[0.3em] bg-surface/80 backdrop-blur-md px-4 py-2 rounded-sm border border-border-variant uppercase">
-             {t('gallery.counter')} {currentIndex + 1} / {images.length}
-          </div>
-        </div>
-
-        {/* Thumbnails */}
-        <div className="mt-12 flex justify-center gap-4 flex-wrap">
-          {images.map((img, i) => (
-            <button
-              key={i}
-              onClick={() => setCurrentIndex(i)}
-              className={`w-24 aspect-video rounded-sm overflow-hidden border-2 transition-all p-0.5 ${currentIndex === i ? 'border-brand-red scale-110' : 'border-border-variant opacity-50 grayscale hover:opacity-100 hover:grayscale-0'}`}
-            >
-              <img src={img} className="w-full h-full object-cover rounded-[1px]" referrerPolicy="no-referrer" />
-            </button>
-          ))}
-        </div>
-      </div>
-      
-      {/* Grid Overlay */}
-      <div className="absolute inset-0 pointer-events-none grid-lines opacity-10"></div>
-    </section>
-  );
-};
-
 export default function App() {
-  const [currentPage, setCurrentPage] = useState('home');
   const [lang, setLang] = useState<Language>(() => {
     const saved = localStorage.getItem('lang');
     return (saved as Language) || 'pt';
@@ -974,20 +865,6 @@ export default function App() {
     }
     return value || key;
   };
-
-  useEffect(() => {
-    const handleHashChange = () => {
-      const hash = window.location.hash;
-      if (hash === '#gallery') {
-        setCurrentPage('gallery');
-      } else {
-        setCurrentPage('home');
-      }
-    };
-    window.addEventListener('hashchange', handleHashChange);
-    handleHashChange();
-    return () => window.removeEventListener('hashchange', handleHashChange);
-  }, []);
 
   const [isDarkMode, setIsDarkMode] = useState(() => {
     const saved = localStorage.getItem('theme');
@@ -1008,49 +885,68 @@ export default function App() {
   return (
     <LanguageContext.Provider value={{ lang, setLang, t }}>
       <div className="min-h-screen selection:bg-brand-red selection:text-white overflow-x-hidden transition-colors duration-300 bg-surface">
-        <Navbar isDarkMode={isDarkMode} toggleTheme={toggleTheme} setPage={setCurrentPage} />
+        <Navbar isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
         
-        {currentPage === 'home' ? (
-          <>
-            <Hero />
-            
-            <section id="specs" className="py-32 bg-brand-blue-deep relative z-10 border-y border-border-variant overflow-hidden">
-              <VelocityFlash />
-              <div className="container mx-auto px-6">
-                <div className="grid md:grid-cols-3 gap-10">
-                  <FeatureCard 
-                    index={0}
-                    icon={Shield}
-                    title={t('specs.s1Title')}
-                    description={t('specs.s1Desc')}
-                  />
-                  <FeatureCard 
-                    index={1}
-                    icon={Zap}
-                    title={t('specs.s2Title')}
-                    description={t('specs.s2Desc')}
-                  />
-                  <FeatureCard 
-                    index={2}
-                    icon={Truck}
-                    title={t('specs.s3Title')}
-                    description={t('specs.s3Desc')}
-                  />
-                </div>
-              </div>
-            </section>
+        <Hero />
+        
+        <section id="specs" className="py-32 bg-brand-blue-deep relative z-10 border-y border-border-variant overflow-hidden">
+          <VelocityFlash />
+          <div className="container mx-auto px-6">
+            <div className="grid md:grid-cols-3 gap-10">
+              <FeatureCard 
+                index={0}
+                icon={Shield}
+                title={t('specs.s1Title')}
+                description={t('specs.s1Desc')}
+              />
+              <FeatureCard 
+                index={1}
+                icon={Zap}
+                title={t('specs.s2Title')}
+                description={t('specs.s2Desc')}
+              />
+              <FeatureCard 
+                index={2}
+                icon={Truck}
+                title={t('specs.s3Title')}
+                description={t('specs.s3Desc')}
+              />
+            </div>
+          </div>
+        </section>
 
-            <About />
-            <CustomTents />
-            <Products onGalleryClick={() => setCurrentPage('gallery')} />
-            <Contact />
-            <MapSection />
-          </>
-        ) : (
-          <Gallery />
-        )}
+        <About />
+        <CustomTents />
+        <Tarps lang={lang} t={t} />
+        <Products />
+        <Contact />
         
         <Footer />
+
+        {/* Floating WhatsApp Button */}
+        <a
+          href="https://wa.me/554333375008"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="fixed bottom-8 right-8 z-[9999] group flex items-center gap-3 bg-[#25D366] hover:bg-[#20ba5a] text-white p-4 rounded-full shadow-2xl hover:scale-115 active:scale-95 transition-all duration-300 cursor-pointer"
+          title={lang === 'pt' ? 'Fale Conosco' : (lang === 'en' ? 'Contact Us' : 'Contáctenos')}
+          id="whatsapp-floating-button"
+        >
+          {/* Pulsing ring */}
+          <span className="absolute -inset-1.5 bg-[#25D366]/40 rounded-full animate-ping pointer-events-none"></span>
+          
+          <svg
+            className="relative z-10 w-7 h-7 fill-current text-white"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.703 1.456h.008c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+          
+          <span className="max-w-0 overflow-hidden group-hover:max-w-[150px] transition-all duration-500 ease-in-out font-bold text-xs tracking-widest uppercase whitespace-nowrap pl-0 group-hover:pl-1 hidden sm:inline-block">
+            {lang === 'pt' ? 'Fale Conosco!' : (lang === 'en' ? 'Contact Us!' : '¡Contáctenos!')}
+          </span>
+        </a>
       </div>
     </LanguageContext.Provider>
   );
