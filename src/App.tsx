@@ -481,8 +481,7 @@ const Products = () => {
 
   const tentImages = [
     'https://lh3.googleusercontent.com/d/1VCgjL4miJqY6OftIUQedeIi52qWWWWw0',
-    'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?q=80&w=800',
-    'https://images.unsplash.com/photo-1544928147-79a2dbc1f389?q=80&w=800'
+    'https://lh3.googleusercontent.com/d/1WJqwPWEf6SR4VG_DUnmmARZ4uMpIKbMI'
   ];
 
   const nextImg = () => setCurrentImg((prev) => (prev + 1) % tentImages.length);
@@ -932,9 +931,6 @@ export default function App() {
           title={lang === 'pt' ? 'Fale Conosco' : (lang === 'en' ? 'Contact Us' : 'Contáctenos')}
           id="whatsapp-floating-button"
         >
-          {/* Pulsing ring */}
-          <span className="absolute -inset-1.5 bg-[#25D366]/40 rounded-full animate-ping pointer-events-none"></span>
-          
           <svg
             className="relative z-10 w-7 h-7 fill-current text-white"
             viewBox="0 0 24 24"
